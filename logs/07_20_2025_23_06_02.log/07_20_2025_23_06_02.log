@@ -1,0 +1,28 @@
+[ 2025-07-20 23:06:13,970] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[ 2025-07-20 23:06:14,657] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[ 2025-07-20 23:06:15,399] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-20 23:06:15,404] 107 dagshub - INFO - Accessing as Jashankochar03
+[ 2025-07-20 23:06:16,121] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Jashankochar03/networksecurity "HTTP/1.1 200 OK"
+[ 2025-07-20 23:06:16,767] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-20 23:06:16,771] 107 dagshub - INFO - Initialized MLflow to track repo "Jashankochar03/networksecurity"
+[ 2025-07-20 23:06:16,772] 107 dagshub - INFO - Repository Jashankochar03/networksecurity initialized!
+[ 2025-07-20 23:06:16,772] 17 root - INFO - Initiate data ingestion
+[ 2025-07-20 23:06:20,535] 67 root - INFO - Performed train test split on the dataframe
+[ 2025-07-20 23:06:20,535] 69 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-07-20 23:06:20,536] 77 root - INFO - Exporting train and test file path.
+[ 2025-07-20 23:06:20,631] 86 root - INFO - Exported train and test file path.
+[ 2025-07-20 23:06:20,632] 19 root - INFO - Data initiation completed
+[ 2025-07-20 23:06:20,745] 32 root - INFO - Required number of columns : 2
+[ 2025-07-20 23:06:20,745] 33 root - INFO - Data frame has columns : 31
+[ 2025-07-20 23:06:20,745] 32 root - INFO - Required number of columns : 2
+[ 2025-07-20 23:06:20,745] 33 root - INFO - Data frame has columns : 31
+[ 2025-07-20 23:06:20,961] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-07-20 23:06:20,961] 65 root - INFO - Starting data transformation
+[ 2025-07-20 23:06:20,986] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-07-20 23:06:20,986] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-07-20 23:06:20,998] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-20 23:06:21,002] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-20 23:06:21,002] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-20 23:06:21,005] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-20 23:06:21,006] 27 root - INFO - data transformation completed
+[ 2025-07-20 23:06:21,006] 30 root - INFO - model training started
