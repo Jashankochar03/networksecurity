@@ -1,0 +1,17 @@
+<form action="/single_predict" method="post">
+    {% for feature, num_choices in features_info.items() %}
+        <label for="{{ feature }}"><strong>{{ feature_questions[feature] }}</strong></label><br>
+        <select name="{{ feature }}" id="{{ feature }}">
+            {% if num_choices == 2 %}
+                <option value="1">Yes</option>
+                <option value="-1">No</option>
+            {% elif num_choices == 3 %}
+                <option value="1">Yes</option>
+                <option value="0">Maybe</option>
+                <option value="-1">No</option>
+            {% endif %}
+        </select>
+        <br><br>
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
